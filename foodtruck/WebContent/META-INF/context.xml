@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Context>
+<Context>
+	<Resource 
+		name="jdbc/OracleDB"
+		auth="Container"
+		type="javax.sql.DataSource"
+		username="foodtruck"
+		password="foodtruck"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		url="jdbc:oracle:thin:@192.168.137.201:1521:orcl"
+		initialSize = "40"
+		maxTotal="500"
+		maxIdle="100"
+		minIdle="20"
+	/>
+	<Resource 
+		name = "jdbc_maria" 
+		auth = "Container"
+		type = "javax.sql.DataSource"
+		driverClassName = "org.mariadb.jdbc.Driver"
+		loginTimeout = "10"
+		maxWait = "500"
+		username = "0000"
+		password = "958465"
+		testOnBorrow = "true"
+		maxActive="50" 
+		maxIdle = "20"
+		url="jdbc:mysql://192.168.137.75:3306/test" 
+ 	/> 
+  
+</Context>
